@@ -19,13 +19,13 @@
 
 @if (Model.HasValue("practices_ddl"))
 {
-    var categories = Model.Value<IEnumerable<string>>("practices_ddl");
-<ul>
+    @*var categories = Model.Value<IEnumerable<string>>("practices_ddl");
+    <ul>
     @foreach (var category in categories)
     {
         <li>@category</li>
         <li>@category</li>
     }
-</ul>
+    </ul>*@
 }
 

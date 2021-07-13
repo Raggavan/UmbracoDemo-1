@@ -300,6 +300,7 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.Model
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Controllers.EntryFormController, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
 
@@ -373,6 +374,7 @@ Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Cult
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Controllers.EntryFormController, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.IRenderMvcController
 
@@ -460,6 +462,7 @@ Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Cult
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Controllers.EntryFormController, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Dashboards.IDashboard
 
@@ -609,12 +612,18 @@ Umbraco.Core.Models.PublishedContent.PublishedContentModel
 
 UmbracoInternal.Models.Article, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Audio, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.BannerImage, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.ContactUs, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.ContentPage, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.EntryForm, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.File, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Folder, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.Home, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Image, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.MacroDemoNew, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Member, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Practices_DocType, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+UmbracoInternal.Models.ProductDetailPage, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.VectorGraphics, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 UmbracoInternal.Models.Video, UmbracoInternal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 

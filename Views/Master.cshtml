@@ -1,0 +1,125 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+    var mediaItem = Umbraco.Media(1095);
+
+}
+
+@if (mediaItem != null)
+{
+    // To get the url for your media item, you use the Url property:
+    var url = mediaItem.Url;
+    // to read a property by alias
+    var imageHeight = mediaItem.Value<int>("umbracoHeight");
+    var imageWidth = mediaItem.Value<int>("umbracoWidth");
+    var orientationCssClass = imageWidth > imageHeight ? "img-landscape" : "img-portrait";
+
+    <img src="@url" alt="@mediaItem.Name" class="@orientationCssClass" />
+}
+
+@* the fun starts here *@
+
+<html>
+<head>
+    <title>Welcome - UmbracoDemo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters           
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+    <style>
+        .swiper-container {
+            width: 900px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="container">
+        <nav class="navbar navbar-expand navbar-default">           
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Views/GeneralContent.cshtml">Product Details</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/Views/GeneralContent.cshtml">Content Play</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="~/Views/ContectUs.cshtml">ContactUs</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="~/Images/1.jpg" /></div>
+            <div class="swiper-slide"><img src="~/Images/2.jpg" /></div>
+            <div class="swiper-slide"> <img src="~/Images/4.png" /></div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    @RenderBody()
+
+    <!-- Footer -->
+    <div class="container-fluid footer">
+        <div class="container">
+
+            @Model.Value("footerText")
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

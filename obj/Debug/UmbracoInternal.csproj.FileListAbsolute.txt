@@ -419,4 +419,3 @@ D:\Vijay\Projects\UmbracoInternal\obj\Debug\UmbracoInternal.csproj.CoreCompileIn
 D:\Vijay\Projects\UmbracoInternal\obj\Debug\UmbracoInternal.csproj.CopyComplete
 D:\Vijay\Projects\UmbracoInternal\obj\Debug\UmbracoInternal.dll
 D:\Vijay\Projects\UmbracoInternal\obj\Debug\UmbracoInternal.pdb
-D:\Vijay\Projects\UmbracoInternal\obj\Debug\UmbracoInternal.csprojAssemblyReference.cache
